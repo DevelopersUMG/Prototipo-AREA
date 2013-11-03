@@ -77,5 +77,11 @@ namespace ADST_Colchoneria.Forms.Principal
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frm_Logistica_envios x = new frm_Logistica_envios();
+            x.Visible = true;
+        }
     }
 }

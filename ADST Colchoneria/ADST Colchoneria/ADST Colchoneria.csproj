@@ -62,6 +62,12 @@
     <Compile Include="Forms\Areas\Comercial\frm_modulofactura.Designer.cs">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_Logistica_envios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_Logistica_envios.designer.cs">
+      <DependentUpon>frm_Logistica_envios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Principal\frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Areas\Logistica\frm_Logistica_envios.resx">
+      <DependentUpon>frm_Logistica_envios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,7 +115,6 @@
   <ItemGroup>
     <Folder Include="Clases\" />
     <Folder Include="Forms\Areas\Finanzas\" />
-    <Folder Include="Forms\Areas\Logistica\" />
     <Folder Include="Forms\Areas\Produccion\" />
     <Folder Include="Forms\Areas\RRHH\" />
     <Folder Include="Forms\Pruebas\" />
