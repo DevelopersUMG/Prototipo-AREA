@@ -25,7 +25,7 @@ namespace ADST_Colchoneria.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ADSTConnector")]
         public string odbc {
             get {
                 return ((string)(this["odbc"]));
@@ -56,6 +56,42 @@ namespace ADST_Colchoneria.Properties {
             }
             set {
                 this["xrol"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string xnomusuario {
+            get {
+                return ((string)(this["xnomusuario"]));
+            }
+            set {
+                this["xnomusuario"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string xaplicacion {
+            get {
+                return ((string)(this["xaplicacion"]));
+            }
+            set {
+                this["xaplicacion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string xaut {
+            get {
+                return ((string)(this["xaut"]));
+            }
+            set {
+                this["xaut"] = value;
             }
         }
     }

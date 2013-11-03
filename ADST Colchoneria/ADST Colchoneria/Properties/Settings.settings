@@ -3,12 +3,21 @@
   <Profiles />
   <Settings>
     <Setting Name="odbc" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">ADSTConnector</Value>
     </Setting>
     <Setting Name="xusuario" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="xrol" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="xnomusuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="xaplicacion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="xaut" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>
