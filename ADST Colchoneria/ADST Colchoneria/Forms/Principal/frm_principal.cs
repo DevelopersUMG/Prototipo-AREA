@@ -14,7 +14,7 @@ using MySql.Data.MySqlClient;
 // Ejemplo de implementacion de formas jerarquicamente
 using ADST_Colchoneria.Forms;
 using ADST_Colchoneria.Forms.Areas;
-using ADST_Colchoneria.Forms.Areas.Comercial;
+using ADST_Colchoneria.Forms.Areas.Produccion;
 using ADST_Colchoneria.Forms.Principal;
 
 
@@ -39,7 +39,7 @@ namespace ADST_Colchoneria.Forms.Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frm_modulofactura x = new frm_modulofactura();
+            frm_categoria x = new frm_categoria();
             x.Visible = true;
         }
 
@@ -74,6 +74,11 @@ namespace ADST_Colchoneria.Forms.Principal
         }
 
         private void frm_principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
