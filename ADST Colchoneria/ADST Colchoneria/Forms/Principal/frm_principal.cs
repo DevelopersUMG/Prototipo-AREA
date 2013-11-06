@@ -83,5 +83,11 @@ namespace ADST_Colchoneria.Forms.Principal
             frm_Logistica_envios x = new frm_Logistica_envios();
             x.Visible = true;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frm_modulofactura x = new frm_modulofactura();
+            x.Visible = true;
+        }
     }
 }

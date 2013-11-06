@@ -82,6 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Areas\Comercial\frm_modulofactura.resx">
+      <DependentUpon>frm_modulofactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Areas\Logistica\frm_Logistica_envios.resx">
       <DependentUpon>frm_Logistica_envios.cs</DependentUpon>
     </EmbeddedResource>
