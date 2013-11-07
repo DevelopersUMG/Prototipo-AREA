@@ -35,7 +35,7 @@ namespace ADST_Colchoneria.Forms.Areas.Logistica
                     break;
 
                 case 1: //validacion de producto, area logistica
-                    Console.WriteLine("SE CAMBIO A - - -  estado 2"+inUbicacion+"   - "+inEstado);
+                   // Console.WriteLine("SE CAMBIO A - - -  estado 2"+inUbicacion+"   - "+inEstado);
                     inUbicacion = 1;
                     inEstado = 2;
                     break;
@@ -142,11 +142,11 @@ namespace ADST_Colchoneria.Forms.Areas.Logistica
                
                 if (inTamano_array2 > 0)
                 {
-                    MessageBox.Show("XX - - - " + stQuery2);  
+                    //MessageBox.Show("XX - - - " + stQuery2);  
                 }
                 else
                 {
-                    MessageBox.Show("2XX - - - "+stQuery2);  
+                    //MessageBox.Show("2XX - - - "+stQuery2);  
                     dtTable.Rows.Add(dict["tbm_factura_id_factura"].ToString(), dict["ubicacion"].ToString(), "pendiente");
                     //dt.Rows.Add(new object[] { dict["tbm_factura_id_factura"].ToString() }, new object[] { "hoa" }, new object[] { "hoa" });//+stubicacion);//,"pendiente");
                 }
