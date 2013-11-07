@@ -38,7 +38,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Recursos\dll\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Navegador">
+    <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>Recursos\dll\Navegador.dll</HintPath>
     </Reference>
     <Reference Include="ODBCConnect">
@@ -59,14 +60,27 @@
     <Compile Include="Forms\Areas\Comercial\frm_modulofactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Areas\Comercial\frm_modulofactura.Designer.cs">
+    <Compile Include="Forms\Areas\Comercial\frm_modulofactura.designer.cs">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_Logistica_entregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_Logistica_entregas.Designer.cs">
+      <DependentUpon>frm_Logistica_entregas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Areas\Logistica\frm_Logistica_envios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Areas\Logistica\frm_Logistica_envios.designer.cs">
       <DependentUpon>frm_Logistica_envios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Historial_Envios.cs" />
+    <Compile Include="Forms\Areas\Logistica\frm_logistica_historial_factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_logistica_historial_factura.Designer.cs">
+      <DependentUpon>frm_logistica_historial_factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal\frm_principal.cs">
       <SubType>Form</SubType>
@@ -85,8 +99,14 @@
     <EmbeddedResource Include="Forms\Areas\Comercial\frm_modulofactura.resx">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Logistica\frm_Logistica_entregas.resx">
+      <DependentUpon>frm_Logistica_entregas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Areas\Logistica\frm_Logistica_envios.resx">
       <DependentUpon>frm_Logistica_envios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Logistica\frm_logistica_historial_factura.resx">
+      <DependentUpon>frm_logistica_historial_factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
@@ -116,7 +136,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Clases\" />
     <Folder Include="Forms\Areas\Finanzas\" />
     <Folder Include="Forms\Areas\Produccion\" />
     <Folder Include="Forms\Areas\RRHH\" />

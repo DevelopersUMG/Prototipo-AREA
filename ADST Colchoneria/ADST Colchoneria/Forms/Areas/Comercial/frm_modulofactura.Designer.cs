@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_modulofactura));
             this.button1 = new System.Windows.Forms.Button();
             this.cmbdepto = new System.Windows.Forms.ComboBox();
             this.cmbmuni = new System.Windows.Forms.ComboBox();
@@ -163,7 +162,6 @@
             this.Controls.Add(this.cmbmuni);
             this.Controls.Add(this.cmbdepto);
             this.Controls.Add(this.button1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_modulofactura";
             this.Text = "Facturacion";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

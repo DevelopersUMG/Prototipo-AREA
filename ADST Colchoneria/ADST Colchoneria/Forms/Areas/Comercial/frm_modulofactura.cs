@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using ODBCConnect;
 using System.Data.Odbc;
+using ADST_Colchoneria.Forms.Areas.Logistica;
 
 namespace ADST_Colchoneria.Forms.Areas.Comercial
 {
@@ -17,7 +18,7 @@ namespace ADST_Colchoneria.Forms.Areas.Comercial
         {
             InitializeComponent();
         }
-        DBConnect con = new DBConnect("ADSTConnector");
+        DBConnect con = new DBConnect(Properties.Settings.Default.odbc);
         private void button1_Click(object sender, EventArgs e)
         {
             GUARDA();
@@ -60,37 +61,17 @@ namespace ADST_Colchoneria.Forms.Areas.Comercial
                     {
                         string tabla = "tbt_detallefactura";
                         Dictionary<string, string> dict2x = new Dictionary<string, string>();
-
                         string xcodigo = (Convert.ToString(row.Cells[1].Value));
                         string xcantidad = (Convert.ToString(row.Cells[0].Value));
                         dict2x.Add("cod_producto", xcodigo);
                         dict2x.Add("cantidad", xcantidad);
                         dict2x.Add("tbm_factura_id_factura", xnofactura);
-                        
                         con.insertar(tabla, dict2x);
                     }
                     xx++;
-                  
                 }
-            
-
-
-            ///
-                string tabla2 = "tbt_historialenvios";
-                Dictionary<string, string> dict2x21 = new Dictionary<string, string>();
-
-
-                dict2x21.Add("tx_fecha", "now()");
-                dict2x21.Add("tbm_factura_id_factura",xnofactura);
-                dict2x21.Add("tbm_ubicacionpedido_id_ubicacionpedido", "1");
-                dict2x21.Add("tbm_estadopedido_id_estadopedido", "1");
-
-                con.insertar(tabla2, dict2x21);
-
-
-            ///
-
-        
+                Historial_Envios x = new Historial_Envios();
+                x.historial(0,xnofactura);
         }
     }
 }

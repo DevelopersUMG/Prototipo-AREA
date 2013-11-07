@@ -16,6 +16,7 @@ using ADST_Colchoneria.Forms;
 using ADST_Colchoneria.Forms.Areas;
 using ADST_Colchoneria.Forms.Areas.Comercial;
 using ADST_Colchoneria.Forms.Principal;
+using ADST_Colchoneria.Forms.Areas.Logistica;
 
 
 namespace ADST_Colchoneria.Forms.Principal
@@ -29,7 +30,6 @@ namespace ADST_Colchoneria.Forms.Principal
 
             this.toolTip1.SetToolTip(toolStrip1, "Una version simple del menu que se desplegara en el MDI final (una lista) agregar botones para pruebas si desean");
             this.toolTip1.SetToolTip(button1, "Llamar un form (EL MDI FINAL) evitara duplicidad de formas abiertos y lo contendra en el mismo");
-            this.toolTip1.SetToolTip(button2, "Tratamiento de un error en odbc (VER CODIGO FUENTE)");
             MessageBox.Show("Este es un prototipo de MDI");
         
             MessageBox.Show("No considerar este form como parte del proyecto final"+"\n"+" (NO INSTANCIAR VARIABLES)");
@@ -86,7 +86,19 @@ namespace ADST_Colchoneria.Forms.Principal
 
         private void button5_Click(object sender, EventArgs e)
         {
-            frm_modulofactura x = new frm_modulofactura();
+            frm_modulofactura x =new frm_modulofactura();
+            x.Visible=true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frm_logistica_historial_factura x = new frm_logistica_historial_factura();
+            x.Visible = true;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frm_Logistica_entregas x = new frm_Logistica_entregas();
             x.Visible = true;
         }
     }
