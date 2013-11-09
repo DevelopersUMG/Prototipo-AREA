@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frm_modulofactura
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Name = "frm_modulofactura";
             this.Text = "frm_prueba";
+            this.Load += new System.EventHandler(this.frm_modulofactura_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

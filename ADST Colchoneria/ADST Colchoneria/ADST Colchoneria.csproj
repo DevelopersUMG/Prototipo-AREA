@@ -62,6 +62,18 @@
     <Compile Include="Forms\Areas\Comercial\frm_modulofactura.Designer.cs">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Areas\RRHH\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\RRHH\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\RRHH\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\RRHH\UserControl1.designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Principal\frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Areas\Comercial\frm_modulofactura.resx">
+      <DependentUpon>frm_modulofactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\RRHH\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\RRHH\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,7 +129,6 @@
     <Folder Include="Forms\Areas\Finanzas\" />
     <Folder Include="Forms\Areas\Logistica\" />
     <Folder Include="Forms\Areas\Produccion\" />
-    <Folder Include="Forms\Areas\RRHH\" />
     <Folder Include="Forms\Pruebas\" />
     <Folder Include="Recursos\bmp\" />
     <Folder Include="Recursos\dll\" />

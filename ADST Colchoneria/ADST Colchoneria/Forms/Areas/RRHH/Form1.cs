@@ -7,16 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ADST_Colchoneria.Forms.Areas.Comercial
+namespace ADST_Colchoneria
 {
-    public partial class frm_modulofactura : Form
+    public partial class Form1 : Form
     {
-        public frm_modulofactura()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void frm_modulofactura_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
