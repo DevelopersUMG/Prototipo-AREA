@@ -13,8 +13,8 @@ using MySql.Data.MySqlClient;
 
 // Ejemplo de implementacion de formas jerarquicamente
 using ADST_Colchoneria.Forms;
-using ADST_Colchoneria.Forms.Areas;
-using ADST_Colchoneria.Forms.Areas.Comercial;
+//using ADST_Colchoneria.Forms.Areas;
+//using ADST_Colchoneria.Forms.Areas.Comercial;
 using ADST_Colchoneria.Forms.Principal;
 
 
@@ -39,33 +39,19 @@ namespace ADST_Colchoneria.Forms.Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frm_modulofactura x = new frm_modulofactura();
-            x.Visible = true;
+            Factura f = new Factura();
+            f.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frm_login x = new frm_login();
-            x.Visible = true;
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-                    try
-            {
-                        //Proceso que involucra la ODBC
-                        
-
-            }
-                    catch (Exception x)
-                    {
-                        // Mensaje de error -  bitacora (pendiente)
-                        MessageBox.Show("Error de conexion");
-
-                    }
-        
-        
+            fr_bodega fr = new fr_bodega();
+            fr.Show();
         }
 
         private void frm_principal_FormClosing(object sender, FormClosingEventArgs e)
@@ -76,6 +62,30 @@ namespace ADST_Colchoneria.Forms.Principal
         private void frm_principal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            fr_Compras c = new fr_Compras();
+            c.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frm_cuentasporcobrar f = new frm_cuentasporcobrar();
+            f.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            form_clientes f = new form_clientes();
+            f.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            form_vendedores f = new form_vendedores();
+            f.Show();
         }
     }
 }

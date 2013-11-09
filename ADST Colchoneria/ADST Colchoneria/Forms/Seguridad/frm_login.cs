@@ -9,8 +9,8 @@ using System.Windows.Forms;
 
 // Ejemplo de implementacion de formas jerarquicamente
 using ADST_Colchoneria.Forms;
-using ADST_Colchoneria.Forms.Areas;
-using ADST_Colchoneria.Forms.Areas.Comercial;
+//using ADST_Colchoneria.Forms.Areas;
+//using ADST_Colchoneria.Forms.Areas.Comercial;
 using ADST_Colchoneria.Forms.Principal;
 
 

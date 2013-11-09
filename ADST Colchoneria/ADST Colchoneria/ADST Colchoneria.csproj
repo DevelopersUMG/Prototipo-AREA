@@ -34,15 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BitacoraErrores">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2010\Projects\ODBCConnect\ODBCConnect\bin\Debug\BitacoraErrores.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Recursos\dll\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Navegador">
-      <HintPath>Recursos\dll\Navegador.dll</HintPath>
+    <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2010\Projects\Navegador\Navegador\bin\Debug\Navegador.dll</HintPath>
     </Reference>
-    <Reference Include="ODBCConnect">
-      <HintPath>Recursos\dll\ODBCConnect.dll</HintPath>
+    <Reference Include="ODBCConnect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2010\Projects\ODBCConnect\ODBCConnect\bin\Debug\ODBCConnect.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,12 +61,93 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Areas\Comercial\frm_modulofactura.cs">
+    <Compile Include="Forms\Areas\Comercial\class_calculo_comision.cs" />
+    <Compile Include="Forms\Areas\Comercial\Detalle_factura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Areas\Comercial\frm_modulofactura.Designer.cs">
-      <DependentUpon>frm_modulofactura.cs</DependentUpon>
+    <Compile Include="Forms\Areas\Comercial\Detalle_factura.designer.cs">
+      <DependentUpon>Detalle_factura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Areas\Comercial\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\Factura.designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\form_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\form_cliente.designer.cs">
+      <DependentUpon>form_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\form_vendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\form_vendedores.designer.cs">
+      <DependentUpon>form_vendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\frm_cuentasporcobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\frm_cuentasporcobrar.designer.cs">
+      <DependentUpon>frm_cuentasporcobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\frm_Reportecuentasporcobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\frm_Reportecuentasporcobrar.designer.cs">
+      <DependentUpon>frm_Reportecuentasporcobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\frm_Reportecuentasporpagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\frm_Reportecuentasporpagar.designer.cs">
+      <DependentUpon>frm_Reportecuentasporpagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_bodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_bodega.designer.cs">
+      <DependentUpon>fr_bodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Compra Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Compra Servicio.designer.cs">
+      <DependentUpon>fr_Compra Servicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Compras.designer.cs">
+      <DependentUpon>fr_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_consultas.designer.cs">
+      <DependentUpon>fr_consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Proveedores.designer.cs">
+      <DependentUpon>fr_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Recepcion de producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\fr_Recepcion de producto.designer.cs">
+      <DependentUpon>fr_Recepcion de producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\funciones_canel.cs" />
+    <Compile Include="Forms\Areas\Comercial\Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\Pago.designer.cs">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Comercial\sumaresta.cs" />
     <Compile Include="Forms\Principal\frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +162,45 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Areas\Comercial\Detalle_factura.resx">
+      <DependentUpon>Detalle_factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\form_cliente.resx">
+      <DependentUpon>form_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\form_vendedores.resx">
+      <DependentUpon>form_vendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\frm_cuentasporcobrar.resx">
+      <DependentUpon>frm_cuentasporcobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\frm_Reportecuentasporpagar.resx">
+      <DependentUpon>frm_Reportecuentasporpagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\fr_bodega.resx">
+      <DependentUpon>fr_bodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\fr_Compra Servicio.resx">
+      <DependentUpon>fr_Compra Servicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\fr_Compras.resx">
+      <DependentUpon>fr_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\fr_consultas.resx">
+      <DependentUpon>fr_consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\fr_Proveedores.resx">
+      <DependentUpon>fr_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\fr_Recepcion de producto.resx">
+      <DependentUpon>fr_Recepcion de producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Comercial\Pago.resx">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +245,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Recursos\png\ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glyphicons_192_circle_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glyphicons_193_circle_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
