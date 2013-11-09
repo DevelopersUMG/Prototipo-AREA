@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-
+using ADST_Colchoneria.Forms.Areas.Finanzas;
 namespace ADST_Colchoneria
 {
     static class Program
@@ -15,6 +15,7 @@ namespace ADST_Colchoneria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+           // Application.Run(new frm_login());
             Application.Run(new frm_login());
         }
     }

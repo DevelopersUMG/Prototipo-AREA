@@ -14,6 +14,7 @@ using MySql.Data.MySqlClient;
 // Ejemplo de implementacion de formas jerarquicamente
 using ADST_Colchoneria.Forms;
 using ADST_Colchoneria.Forms.Areas;
+using ADST_Colchoneria.Forms.Areas.Comercial;
 using ADST_Colchoneria.Forms.Areas.Finanzas;
 using ADST_Colchoneria.Forms.Principal;
 
@@ -30,16 +31,16 @@ namespace ADST_Colchoneria.Forms.Principal
             this.toolTip1.SetToolTip(toolStrip1, "Una version simple del menu que se desplegara en el MDI final (una lista) agregar botones para pruebas si desean");
             this.toolTip1.SetToolTip(button1, "Llamar un form (EL MDI FINAL) evitara duplicidad de formas abiertos y lo contendra en el mismo");
             this.toolTip1.SetToolTip(button2, "Tratamiento de un error en odbc (VER CODIGO FUENTE)");
-            MessageBox.Show("Este es un prototipo de MDI");
+           // MessageBox.Show("Este es un prototipo de MDI");
         
-            MessageBox.Show("No considerar este form como parte del proyecto final"+"\n"+" (NO INSTANCIAR VARIABLES)");
+            //MessageBox.Show("No considerar este form como parte del proyecto final"+"\n"+" (NO INSTANCIAR VARIABLES)");
           
         }
         DBConnect con = new DBConnect(Properties.Settings.Default.odbc);
 
         private void button1_Click(object sender, EventArgs e)
         {
-            menu x = new menu ();
+            frm_modulofactura x = new frm_modulofactura();
             x.Visible = true;
         }
 
@@ -75,6 +76,43 @@ namespace ADST_Colchoneria.Forms.Principal
 
         private void frm_principal_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            frm_historial_cuentas frm = new frm_historial_cuentas();
+            frm.Visible = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frm_nomenclatura frm= new frm_nomenclatura();
+            frm.Visible = true;
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frm_libro_diario frm= new frm_libro_diario();
+            frm.Visible = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frm_manejo_bancos frm = new frm_manejo_bancos();
+            frm.Visible = true;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            frm_poliza_departamentos frm = new frm_poliza_departamentos();
+            frm.Visible = true;
 
         }
     }
