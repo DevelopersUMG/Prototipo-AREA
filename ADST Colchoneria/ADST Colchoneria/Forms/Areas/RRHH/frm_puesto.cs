@@ -7,16 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ADST_Colchoneria.Forms.Areas.Comercial
+namespace ADST_Colchoneria.Forms.Areas.RRHH
 {
-    public partial class frm_modulofactura : Form
+    public partial class frm_puesto : Form
     {
-        public frm_modulofactura()
+        public frm_puesto()
         {
             InitializeComponent();
         }
 
-        private void frm_modulofactura_Load(object sender, EventArgs e)
+        private void frm_puesto_Load(object sender, EventArgs e)
         {
 
         }
