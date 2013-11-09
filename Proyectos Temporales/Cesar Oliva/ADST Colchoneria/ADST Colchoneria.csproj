@@ -11,7 +11,8 @@
     <RootNamespace>ADST_Colchoneria</RootNamespace>
     <AssemblyName>ADST Colchoneria</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,14 +35,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BitacoraErrores, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Recursos\dll\BitacoraErrores.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Recursos\dll\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Navegador">
+    <Reference Include="Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>Recursos\dll\Navegador.dll</HintPath>
     </Reference>
-    <Reference Include="ODBCConnect">
+    <Reference Include="ODBCConnect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>Recursos\dll\ODBCConnect.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -62,17 +69,29 @@
     <Compile Include="Forms\Areas\Comercial\frm_modulofactura.Designer.cs">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Areas\Finanzas\actualizar_saldos.cs">
+    <Compile Include="Forms\Areas\Finanzas\actualizar_cts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Areas\Finanzas\actualizar_saldos.Designer.cs">
-      <DependentUpon>actualizar_saldos.cs</DependentUpon>
+    <Compile Include="Forms\Areas\Finanzas\actualizar_cts.Designer.cs">
+      <DependentUpon>actualizar_cts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Areas\Finanzas\menu.cs">
+    <Compile Include="Forms\Areas\Finanzas\frm_finanzas_principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Areas\Finanzas\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
+    <Compile Include="Forms\Areas\Finanzas\frm_finanzas_principal.Designer.cs">
+      <DependentUpon>frm_finanzas_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Finanzas\frm_manejo_bancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Finanzas\frm_manejo_bancos.Designer.cs">
+      <DependentUpon>frm_manejo_bancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Areas\Finanzas\frm_nomenclatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Finanzas\frm_nomenclatura.Designer.cs">
+      <DependentUpon>frm_nomenclatura.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal\frm_principal.cs">
       <SubType>Form</SubType>
@@ -88,11 +107,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Areas\Finanzas\actualizar_saldos.resx">
-      <DependentUpon>actualizar_saldos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Areas\Finanzas\actualizar_cts.resx">
+      <DependentUpon>actualizar_cts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Areas\Finanzas\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Areas\Finanzas\frm_finanzas_principal.resx">
+      <DependentUpon>frm_finanzas_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Finanzas\frm_manejo_bancos.resx">
+      <DependentUpon>frm_manejo_bancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Finanzas\frm_nomenclatura.resx">
+      <DependentUpon>frm_nomenclatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
@@ -127,25 +152,16 @@
     <Folder Include="Forms\Areas\Produccion\" />
     <Folder Include="Forms\Areas\RRHH\" />
     <Folder Include="Forms\Pruebas\" />
-    <Folder Include="Recursos\bmp\" />
-    <Folder Include="Recursos\dll\" />
-    <Folder Include="Recursos\ico\" />
-    <Folder Include="Recursos\mp3\" />
+    <Folder Include="Forms\Recursos\bmp\" />
+    <Folder Include="Forms\Recursos\dll\" />
+    <Folder Include="Forms\Recursos\ico\" />
+    <Folder Include="Forms\Recursos\mp3\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\jpg\h.jpg" />
+    <None Include="Forms\Recursos\jpg\h.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Recursos\png\ingresar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="iconos\Sync.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="iconos\ingreso.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="iconos\Documents.png" />
+    <None Include="Forms\Recursos\png\ingresar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
