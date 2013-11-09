@@ -115,5 +115,14 @@ namespace ADST_Colchoneria.Forms.Principal
             frm.Visible = true;
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            frm_actualizar_cts frm = new frm_actualizar_cts();
+            frm.Visible = true;
+        }
+
+       
+       
     }
 }

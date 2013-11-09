@@ -67,6 +67,12 @@
     <Compile Include="Forms\Areas\Comercial\frm_modulofactura.Designer.cs">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Areas\Finanzas\frm_actualizar_cts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Finanzas\frm_actualizar_cts.designer.cs">
+      <DependentUpon>frm_actualizar_cts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Areas\Finanzas\frm_historial_cuentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Areas\Finanzas\frm_actualizar_cts.resx">
+      <DependentUpon>frm_actualizar_cts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Areas\Finanzas\frm_historial_cuentas.resx">
       <DependentUpon>frm_historial_cuentas.cs</DependentUpon>
     </EmbeddedResource>
