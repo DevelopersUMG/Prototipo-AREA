@@ -87,29 +87,47 @@ namespace ADST_Colchoneria.Forms.Areas.Logistica
             }
         }
 
-
         public BindingSource busquedaporarea(int ubicacion, string filtro)
         {
-
             //string querybeta="(select tx_ubicacionpedido from tbm_ubicacionpedido where tbm_ubicacionpedido.id_ubicacionpedido=tbt_historialenvios.tbm_ubicacionpedido_id_ubicacionpedido)AS ubicacion";
             string query = "select tbm_factura_id_factura,(select tx_ubicacionpedido from tbm_ubicacionpedido where tbm_ubicacionpedido.id_ubicacionpedido=tbt_historialenvios.tbm_ubicacionpedido_id_ubicacionpedido)AS ubicacion, id_historialenvios from tbt_historialenvios WHERE tbm_ubicacionpedido_id_ubicacionpedido =  " + ubicacion + " and tbm_factura_id_factura=" + filtro + "";
             System.Collections.ArrayList array = gCon.consultar(query);
             int intamanoarray = array.Count;
             DataTable dt = new DataTable();
             dt.Columns.Add("Factura");
-            //
             dt.Columns.Add("Ubicacion");
             dt.Columns.Add("Estado");
+            foreach (Dictionary<string, string> dict in array)
+            {
+                dt.Rows.Add(dict["tbm_factura_id_factura"].ToString(), dict["ubicacion"].ToString(), "pendiente");
+                //dt.Rows.Add(new object[] { dict["tbm_factura_id_factura"].ToString() }, new object[] { "hoa" }, new object[] { "hoa" });//+stubicacion);//,"pendiente");
+            }
+            var source = new BindingSource();
+            source.DataSource = dt;
+            return source;
+        }
+
+        public BindingSource busquedadeviaje(string filtro)
+        {
+            string query = "SELECT idtbm_viajes_logistica AS Viaje, tbm_rutas_idtbm_rutas AS Ruta FROM  `tbm_viajes_logistica` WHERE idtbm_viajes_logistica = " + filtro;
+            System.Collections.ArrayList array = gCon.consultar(query);
+            int intamanoarray = array.Count;
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Viaje");
+            dt.Columns.Add("Ruta");
 
             foreach (Dictionary<string, string> dict in array)
             {
-
-
-                dt.Rows.Add(dict["tbm_factura_id_factura"].ToString(), dict["ubicacion"].ToString(), "pendiente");
+                //string date = dict["Fecha"];
+                //DateTime dts = Convert.ToDateTime(date);
+                //Console.WriteLine("Year: {0}, Month: {1}, Day: {2}", dt.Year, dt.Month, dt.Day);
+                //DateTime fecha2 = dts.Day + "/" + dts.Month + "/" + dts.Year;
+                //string stFormat_datetime = "dd/MM/yyyy";
+                //DateTime fecha2 = DateTime.Parse(dict["Fecha"]);
+                //fecha2.ToString(stFormat_datetime);
+                //dt.Rows.Add(dict["Viaje"].ToString(), dict["Ruta"].ToString(), fecha2);
+                dt.Rows.Add(dict["Viaje"].ToString(), dict["Ruta"].ToString());
                 //    dt.Rows.Add(new object[] { dict["tbm_factura_id_factura"].ToString() }, new object[] { "hoa" }, new object[] { "hoa" });//+stubicacion);//,"pendiente");
-
-
-
             }
 
             var source = new BindingSource();
@@ -118,6 +136,7 @@ namespace ADST_Colchoneria.Forms.Areas.Logistica
 
 
         }
+
         public BindingSource historialarea(int ubicacion)
         {
             // 

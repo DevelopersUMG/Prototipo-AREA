@@ -63,6 +63,12 @@
     <Compile Include="Forms\Areas\Comercial\frm_modulofactura.designer.cs">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_Logistica_autorizacion_salida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Areas\Logistica\frm_Logistica_autorizacion_salida.Designer.cs">
+      <DependentUpon>frm_Logistica_autorizacion_salida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Areas\Logistica\frm_Logistica_entregas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Areas\Comercial\frm_modulofactura.resx">
       <DependentUpon>frm_modulofactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Areas\Logistica\frm_Logistica_autorizacion_salida.resx">
+      <DependentUpon>frm_Logistica_autorizacion_salida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Areas\Logistica\frm_Logistica_entregas.resx">
       <DependentUpon>frm_Logistica_entregas.cs</DependentUpon>

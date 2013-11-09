@@ -158,6 +158,9 @@ namespace ADST_Colchoneria
 
         private void button2_Click(object obSender, EventArgs evE)
         {
+            tabControl1.TabPages.Remove(tabPage2);
+            button1.Hide();
+            button3.Hide();
             Obtener_factura();
             //crear a que factura hacerle BUSQUEDA
 
@@ -219,6 +222,10 @@ namespace ADST_Colchoneria
 
         public void salir() {
 
+            tabControl1.TabPages.Remove(tabPage2);
+            button1.Hide();
+            button3.Hide();
+            
             DialogResult result = MessageBox.Show("Desea confirmar otro envio?", "Envios", MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
