@@ -35,5 +35,12 @@ namespace ADST_Colchoneria.Forms.Areas.Finanzas
             frm.Visible = true;
 
         }
+
+        private void frm_finanzas_principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

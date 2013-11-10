@@ -52,6 +52,7 @@ namespace ADST_Colchoneria.Forms.Areas.Finanzas
             dataGridView2.DataSource = db.consulta_DataGridView("SELECT * FROM tbt_cuentas_bancarias;");
 
 
+
             comboBox1.DataSource = db.consulta_ComboBox("select idtbt_bancos, nomb_banco from tbt_bancos;");
             comboBox1.DisplayMember = "nomb_banco";
             comboBox1.ValueMember = "idtbt_bancos";

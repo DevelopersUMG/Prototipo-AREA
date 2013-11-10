@@ -60,7 +60,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 65);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "Polizas Departamentos";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -85,6 +85,7 @@
             this.Name = "frm_finanzas_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal Finanzas";
+            this.Load += new System.EventHandler(this.frm_finanzas_principal_Load);
             this.ResumeLayout(false);
 
         }
